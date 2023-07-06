@@ -1,0 +1,33 @@
+<h1>Employees</h1>
+<div *ngFor="let employee of employees">
+    <p class="class-text" *ngIf="employee.employee_age>50">
+      {{employee.employee_name}} ({{employee.employee_age}})
+    </p>
+    <p class="class-prime" *ngIf="employee.employee_age<50">
+        {{employee.employee_name}} ({{employee.employee_age}})
+      </p>
+</div>
+
+<h1>Sorts data in descending order</h1>
+<br><br>
+<div class="container">
+  <table class="table table-striped table-bordered">
+      <thead>
+          <tr class="info">
+              <th>Id</th>
+              <th>Name</th>
+              <th>Salary</th>
+              <th>age</th>
+              
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of employees|descsortpipe:['employee_salary']">
+              <td>{{user.id}}</td>
+              <td>{{user.employee_name}}</td>
+              <td>{{user.employee_salary}}</td>
+              <td>{{user.employee_age}}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>

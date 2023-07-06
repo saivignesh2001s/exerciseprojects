@@ -1,0 +1,3 @@
+<div>this is parent component</div>
+<div style="color:blue">value from child component is {{result}}</div>
+<app-child [message]="result" (notify)="getdata($event)"></app-child>

@@ -1,0 +1,25 @@
+<h3>Users</h3>
+<table>
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Userid</th>
+         <th>Username</th>
+         <th>EmailId</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let use of user"> 
+    <td style="width:100px" >
+        <tr>{{use.name}}</tr>
+    </td>
+    <td  style="width:30px">
+        <tr>{{use.id}}</tr>
+    </td>
+    <td style="width:50px">
+        <tr>{{use.username}}</tr>
+    </td>
+    <td>
+        <tr>{{use.email}}</tr>
+    </td>
+</tbody>
+</table>

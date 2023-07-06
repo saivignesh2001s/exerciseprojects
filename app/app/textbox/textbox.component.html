@@ -1,0 +1,20 @@
+<h4>
+Firstname:{{firstname}}<br>
+Lastname:{{lastname}}<br>
+Dob:{{dob}}<br>
+</h4>
+<label for id="firstname">Firstname</label><br>
+<input type="text" value="{{firstname}}"><br><br>
+<label for id="lastname">Lastname</label><br>
+<input type="text" value="{{lastname}}"><br><br>
+<label for id="dob">DOB</label><br>
+<input type="text" value="{{dob}}"><br><br><br>
+
+<label for id="firstname">Firstname</label><br>
+<input type="text" [(ngModel)]="firstname"><br><br>
+<label for id="lastname">Lastname</label><br>
+<input type="text" [(ngModel)]="lastname"><br><br>
+<label for id="dob">DOB</label><br>
+<input type="text" [(ngModel)]="dob"><br><br>
+<input type="button" value="click" (click)="sayHello()"><br><br>
+
